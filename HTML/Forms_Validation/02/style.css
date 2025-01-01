@@ -1,0 +1,14 @@
+label {
+    display: block;
+    margin-top: 1em;
+  }
+  
+  input:valid,
+  textarea:valid {
+    background-color: rgba(152, 251, 152, 0.192);
+  }
+  input:invalid,
+  textarea:invalid {
+    background-color: rgba(255, 0, 0, 0.098);
+  }
+  

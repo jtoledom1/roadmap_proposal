@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,9 +13,19 @@
         <ul>
             <li>Required</li>
             <li><mark>Min lenght</mark></li>
-            <li>Max lenght</li>
-            <li>Type</li>
+            <li><mark>Max lenght</mark></li>
+            <li><mark>Type</mark></li>
+            <li>Regular expression</li>
         </ul>
     </header>
+    <section>
+        <h3>Introduce here info about your product</h3>
+        <p>Here we're using css to reflect the value of validation</p>
+        <label for="name">Product name: </label>
+        <input type="text" placeholder="Shampoo" name="name" id="name" minlength="3" maxlength="20" required>
+
+        <label for="description">Product description:</label>
+        <textarea id="description" name="description" minlength="10" maxlength="40" required></textarea>
+    </section>
 </body>
 </html>
