@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>First validation</title>
 </head>
 <body>
@@ -11,12 +12,18 @@
         <h1>Simple form to get filled</h1>
         <h2>Topics</h2>
         <ul>
-            <li>Required</li>
+            <li><mark>Required</mark></li>
             <li>Min lenght</li>
             <li>Max lenght</li>
             <li>Type</li>
         </ul>
     </header>
-    
+    <main>
+        <form>
+            <label for="choose">How you feel about GTA 6?</label>
+            <input id="choose" name="i-like" required/>
+            <button>Submit</button>
+        </form>
+    </main>
 </body>
 </html>
