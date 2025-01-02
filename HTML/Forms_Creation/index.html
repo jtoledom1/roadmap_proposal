@@ -77,25 +77,49 @@
             <input type="hidden" id="timestamp" name="timestamp" value="1286705410" />
         </div>
         <div class="checkable_items">
-            <ul>
-                <li>
-                  <label for="OPC1">OPC1</label>
-                  <input
-                    type="checkbox"
-                    id="OPC1"
-                    name="vegetable"
-                    value="OPC1"
-                    checked />
-                </li>
-                <li>
-                  <label for="OPC2">OPC2</label>
-                  <input type="checkbox" id="OPC2" name="vegetable" value="OPC2" />
-                </li>
-                <li>
-                  <label for="OPC3">OPC3</label>
-                  <input type="checkbox" id="OPC3" name="vegetable" value="OPC3" />
-                </li>
-            </ul>
+            <fieldset>
+                <legend>
+                    Checkable_items
+                </legend> 
+                <ul>
+                    <li>
+                        <label for="OPC1">OPC1</label>
+                        <input
+                        type="checkbox"
+                        id="OPC1"
+                        name="vegetable"
+                        value="OPC1"
+                        checked />
+                    </li>
+                    <li>
+                        <label for="OPC2">OPC2</label>
+                        <input type="checkbox" id="OPC2" name="vegetable" value="OPC2" />
+                    </li>
+                    <li>
+                        <label for="OPC3">OPC3</label>
+                        <input type="checkbox" id="OPC3" name="vegetable" value="OPC3" />
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        <div class="radiobutton">
+            <fieldset>
+                <legend>What is your favorite OPC?</legend>
+                <ul>
+                    <li>
+                    <label for="OPC1">OPC1</label>
+                    <input type="radio" id="OPC1" name="OPC" value="OPC1" checked />
+                    </li>
+                    <li>
+                    <label for="OPC2">OPC2</label>
+                    <input type="radio" id="OPC2" name="OPC" value="OPC2" />
+                    </li>
+                    <li>
+                    <label for="OPC3">OPC3</label>
+                    <input type="radio" id="OPC3" name="OPC" value="OPC3" />
+                    </li>
+                </ul>
+            </fieldset>
         </div>
     </main>
 </body>
