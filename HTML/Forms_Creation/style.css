@@ -1,0 +1,7 @@
+input:invalid{
+    background-color: red;
+}
+label {
+    display: block;
+    margin-top: 1em;
+  }

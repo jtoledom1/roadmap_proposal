@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Forms</h1>
+        <h2>Different types & declaration</h2>
+    </header>
+    <main>
+        <div class="email">
+            <label for="email">Type your e-mail</label>
+            <input type="email" id="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email"/>
+        </div>
+        <div class="phonenumber">
+            <label for="phonenum">Introduce your phone number</label>
+            <input type="tel" id="tel" name="tel" placeholder="Phone number"/>
+        </div>
+        <div class="URL">
+            <label for="Url">Enter a URL</label>
+            <input type="url" name="URL" placeholder="Url"/>
+        </div>
+        <div class="numeric">
+            <label for="numeric">Enter a number</label>
+            <input type="number" name="number" placeholder="Number">
+        </div>
+        <div class="slider_control">
+            
+            <label for="price">Choose a number: </label>
+            <input
+            type="range"
+            name="price"
+            id="price"
+            min="50000"
+            max="500000"
+            step="1000"
+            value="250000"
+            />
+            <output class="price-output" for="price"></output>
+            <script>
+                const price = document.querySelector("#price");
+                const output = document.querySelector(".price-output");
+        
+                output.textContent = price.value;
+        
+                price.addEventListener("input", () => {
+                output.textContent = price.value;
+                });
+            </script>
+        </div>
+        <div class="datetime">
+            <label for="date">date</label>
+            <input type="date" name="date" id="date"/>
+            <label for="datetime">datetime-local</label>
+            <input type="datetime-local" name="" id="">
+        </div>
+    </main>
+</body>
+</html>
