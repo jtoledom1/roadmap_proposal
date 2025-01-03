@@ -1,0 +1,47 @@
+/* Reset de estilos por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para el título */
+#title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el contenedor de la barra de navegación */
+#nav_opts {
+    background-color: #333; /* Gris oscuro */
+    border-radius: 5px;
+}
+
+/* Estilos para la lista de navegación */
+#nav_opts ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+/* Estilos para cada elemento de la lista */
+#nav_opts li {
+    margin: 0 15px;
+    font-size: 1rem;
+    color: white
+}

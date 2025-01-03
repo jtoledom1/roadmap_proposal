@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../Assets/XD_NOBACKGROUND.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Simple form to get filled</h1>
+        <h2>Topics</h2>
+        <nav>
+            <ul>
+                <li><a href="../01/index.html">Required</a></li>
+                <li><a href="../02/index.html">Min lenght</a></li>
+                <li><a href="../02/index.html">Max lenght</a></li>
+                <li><a href="../02/index.html">Type</a></li>
+                <li><mark>Regular expression</mark></li>
+                <li><a href="../04/index.html">Entires Length</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Regular expressions</h2>
+        <form>
+            <label for="choose">This match exactly <mark>a</mark></label>
+            <input id="choose" name="pat_a" required pattern="a"/>
+            <label for="choose">This match exactly <mark>abc</mark></label>
+            <input id="choose" name="pat_abc" required pattern="abc"/>
+            <label for="choose">This match <mark>a</mark> or <mark>x</mark></label>
+            <input id="choose" name="pat_a|x" required pattern="a|x"/>
+            <label for="choose">This match <mark>ab</mark> or <mark>xy</mark></label>
+            <input id="choose" name="pat_ab|xy" required pattern="ab|xy"/>
+            <label for="choose">This match abc but with one or none <mark>b</mark></label>
+            <input id="choose" name="pat_ab?c" required pattern="ab?c"/>
+            <label for="choose">This match abc but with none or multiple <mark>b</mark></label>
+            <input id="choose" name="pat_ab*c" required pattern="ab*c"/>
+            <label for="choose">This match <mark>b</mark> but case sensitive</label>
+            <input id="choose" name="pat_[Bb]" required pattern="[Bb]"/>
+            <button>Submit</button>
+        </form>
+    </main>
+</body>
+</html>

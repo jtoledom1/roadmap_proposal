@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Forms Validation</h1>
+        <nav id="nav_opts">
+            <ul>
+                <li onclick="callrequired()" id="li_Req">Required</li>
+                <li onclick="callminlen()" id="li_MiL">Min lenght</li>
+                <li onclick="callmaxlen()" id="li_MaL">Max lenght</li>
+                <li onclick="calltype()" id="li_Typ">Type</li>
+                <li onclick="callregexp()" id="li_REX">Regular expression</li>
+                <li onclick="callentlen()" id="li_Enl">Entires Length</li>
+            </ul>            
+        </nav>
+    </header>
+    <main id="jscontent"></main>
+</body>
+</html>
