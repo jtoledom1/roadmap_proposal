@@ -61,9 +61,16 @@
   <section id="sec_Mil" hidden>
     <h3>Introduce here info about your product</h3>
     <p>Here we're using css to reflect values for validation</p>
-    <label for="name">Product name:</label><input type="text" placeholder="Shampoo" name="name" id="name" minlength="3"
-      required /><label for="description">Product description:</label><textarea id="description" name="description"
-      minlength="10" required></textarea>
+    <div class="product">
+
+      <label for="name">Product name:</label>
+      <input type="text" placeholder="Shampoo" name="name" id="name" minlength="3"required />
+    </div>
+    <div class="description">
+      <label for="description">Product description:</label>
+      
+      <textarea id="description" name="description" minlength="10" required></textarea>
+    </div>
   </section>
   <section id="sec_Typ" hidden>
     <main>
@@ -99,10 +106,14 @@
         </script>
       </div>
       <div class="datetime">
-        <label for="date">date</label>
-        <input type="date" name="date" id="date" />
-        <label for="datetime">datetime-local</label>
-        <input type="datetime-local" name="" id="" />
+        <div class="date">
+          <label for="date">date</label>
+          <input type="date" name="date" id="date" />
+        </div>
+        <div class="dttlocal">
+          <label for="datetime">datetime-local</label>
+          <input type="datetime-local" name="" id="" />
+        </div>
         <label for="">Month</label>
         <input type="month" name="" id="" />
         <label for="">Time</label>
@@ -189,7 +200,6 @@
       <input type="number" name="num_val" id="number" value="0" min="0" step="2" max="20" />
     </form>
   </section>
-
   <section id="sec_Hom" hidden>
     <p>Initial</p>
   </section>

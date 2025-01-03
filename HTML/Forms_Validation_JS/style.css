@@ -15,7 +15,7 @@ body {
 header {
     background-color: #4CAF50; /* Verde */
     color: white;
-    padding: 20px;
+    padding: 1vw;
     text-align: center;
 }
 
@@ -44,4 +44,37 @@ header {
     margin: 0 15px;
     font-size: 1rem;
     color: white
+}
+#jscontent{
+    padding: 1vw;
+    width: 50vw;
+    height:100% ;
+    margin: 0 auto;
+    margin-top: 1em;
+    border-style:solid;
+    border-color: black;
+}
+
+label{
+    display:inline-block;
+    margin-top: 1em;
+}
+button,textarea{
+    display: block;
+    margin-top: 1em;
+}
+fieldset{
+    margin-top: 1em;
+    margin-left: 1em;
+}
+input:invalid,
+textarea:invalid {
+    background-color: rgba(255, 0, 0, 0.098);
+}
+input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+}
+input:valid,
+textarea:valid {
+    background-color: rgba(152, 251, 152, 0.192);
 }
