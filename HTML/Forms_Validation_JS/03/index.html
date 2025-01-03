@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../Assets/XD_NOBACKGROUND.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="../app.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -23,24 +24,26 @@
         </nav>
     </header>
     <main>
-        <h2>Regular expressions</h2>
-        <form>
-            <label for="choose">This match exactly <mark>a</mark></label>
-            <input id="choose" name="pat_a" required pattern="a"/>
-            <label for="choose">This match exactly <mark>abc</mark></label>
-            <input id="choose" name="pat_abc" required pattern="abc"/>
-            <label for="choose">This match <mark>a</mark> or <mark>x</mark></label>
-            <input id="choose" name="pat_a|x" required pattern="a|x"/>
-            <label for="choose">This match <mark>ab</mark> or <mark>xy</mark></label>
-            <input id="choose" name="pat_ab|xy" required pattern="ab|xy"/>
-            <label for="choose">This match abc but with one or none <mark>b</mark></label>
-            <input id="choose" name="pat_ab?c" required pattern="ab?c"/>
-            <label for="choose">This match abc but with none or multiple <mark>b</mark></label>
-            <input id="choose" name="pat_ab*c" required pattern="ab*c"/>
-            <label for="choose">This match <mark>b</mark> but case sensitive</label>
-            <input id="choose" name="pat_[Bb]" required pattern="[Bb]"/>
-            <button>Submit</button>
-        </form>
+        <section id="sec_REX">
+            <h2>Regular expressions</h2>
+            <form>
+                <label for="choose">This match exactly <mark>a</mark></label>
+                <input id="choose" name="pat_a" required pattern="a"/>
+                <label for="choose">This match exactly <mark>abc</mark></label>
+                <input id="choose" name="pat_abc" required pattern="abc"/>
+                <label for="choose">This match <mark>a</mark> or <mark>x</mark></label>
+                <input id="choose" name="pat_a|x" required pattern="a|x"/>
+                <label for="choose">This match <mark>ab</mark> or <mark>xy</mark></label>
+                <input id="choose" name="pat_ab|xy" required pattern="ab|xy"/>
+                <label for="choose">This match abc but with one or none <mark>b</mark></label>
+                <input id="choose" name="pat_ab?c" required pattern="ab?c"/>
+                <label for="choose">This match abc but with none or multiple <mark>b</mark></label>
+                <input id="choose" name="pat_ab*c" required pattern="ab*c"/>
+                <label for="choose">This match <mark>b</mark> but case sensitive</label>
+                <input id="choose" name="pat_[Bb]" required pattern="[Bb]"/>
+                <button>Submit</button>
+            </form>
+        </section>
     </main>
 </body>
 </html>

@@ -1,11 +1,11 @@
 function clear(){
-    let jscontent = document.getElementById("jscontent");
     let li_req = document.getElementById("li_Req");
     let li_mil = document.getElementById("li_MiL");
     let li_mal = document.getElementById("li_MaL");
     let li_typ = document.getElementById("li_Typ");
     let li_rex = document.getElementById("li_REX");
-    let li_enl=  document.getElementById("li_Enl");
+    let li_enl = document.getElementById("li_Enl");
+    let li_hom = document.getElementById("li_Home");
     
     li_req.style.color = "white";
     li_mil.style.color = "white";
@@ -13,8 +13,9 @@ function clear(){
     li_typ.style.color = "white";
     li_rex.style.color = "white";
     li_enl.style.color = "white";
+    li_hom.style.color = "white";
 
-    jscontent.innerHTML="<em><em/>"    
+    document.getElementById("jscontent").innerHTML = '';  
 }
 function color(labls){
     labls.style.color = "red";
@@ -23,28 +24,17 @@ function color(labls){
     }, 300);
 }
 
-function callrequired(){    
-    let li_req = document.getElementById("li_Req");
+function calls2(tab,texth1,html){
+    let intertab = document.getElementById(tab);
     let jscontent = document.getElementById("jscontent");
     let title = document.getElementById("title");
-
-    title.innerText = "Required";
+    let varhtml = document.getElementById(html).innerHTML;
+    title.innerText =texth1;
     clear();
-    color(li_req);
-
-    jscontent.innerHTML=
-    `<form><label for='choose'>How you feel about GTA 6?</label><input id='choose' name='i-like' required/><button>Submit</button></form>`;
-
+    color(intertab);
+    jscontent.innerHTML=varhtml;
 }
 
-function callminlen(){
-    let li_mil = document.getElementById("li_MiL");
-    let jscontent = document.getElementById("jscontent");
-    let title = document.getElementById("title");
-    
-    title.innerText = "Min Lenght";
-    
-    clear();
-    color(li_mil);
-    
+function initial(){
+    document.getElementById('sec_Hom').setAttribute('hidden', false);
 }

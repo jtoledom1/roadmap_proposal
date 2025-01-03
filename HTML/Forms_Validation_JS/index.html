@@ -1,26 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js"></script>
+  <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <h1 id="title">Forms Validation</h1>
-        <nav id="nav_opts">
-            <ul>
-                <li onclick="callrequired()" id="li_Req">Required</li>
-                <li onclick="callminlen()" id="li_MiL">Min lenght</li>
-                <li onclick="callmaxlen()" id="li_MaL">Max lenght</li>
-                <li onclick="calltype()" id="li_Typ">Type</li>
-                <li onclick="callregexp()" id="li_REX">Regular expression</li>
-                <li onclick="callentlen()" id="li_Enl">Entires Length</li>
-            </ul>            
-        </nav>
-    </header>
-    <main id="jscontent"></main>
+  <header>
+    <h1 id="title">Forms Validation</h1>
+    <nav id="nav_opts">
+      <ul>
+        <li onclick="calls2('li_Home','Forms Validation','sec_Hom')" id="li_Home">
+          Home
+        </li>
+
+        <li onclick="calls2('li_Req','Required','sec_Req')" id="li_Req">
+          Required
+        </li>
+
+        <li onclick="calls2('li_MiL','Min length','sec_Mil')" id="li_MiL">
+          Min lenght
+        </li>
+
+        <li onclick="calls2('li_MaL','Max length','sec_Mal')" id="li_MaL">
+          Max lenght
+        </li>
+
+        <li onclick="calls2('li_Typ','Type','sec_Typ')" id="li_Typ">Type</li>
+
+        <li onclick="calls2('li_REX','Regular expression','sec_REX')" id="li_REX">
+          Regular expression
+        </li>
+
+        <li onclick="calls2('li_Enl','Entires length','sec_Enl')" id="li_Enl">
+          Entires Length
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="sec_Mal" hidden>
+      <h3>Introduce here info about your product</h3>
+      <p>Here we're using css to reflect the value of validation</p>
+      <label for='name'>Product name:</label>
+      <input type='text' placeholder='Shampoo' name='name' id='name' maxlength='20' required />
+      <label for='description'>Product description:</label>
+      <textarea id='description' name='description' maxlength='40'required></textarea>
+  </section>
+  <section id="sec_Req" hidden>
+    <form>
+      <label for="choose">How you feel about GTA 6?</label>
+      <input id="choose" name="i-like" required />
+      <button>Submit</button>
+    </form>
+  </section>
+  <section id="sec_Mil" hidden>
+    <h3>Introduce here info about your product</h3>
+    <p>Here we're using css to reflect values for validation</p>
+    <label for="name">Product name:</label><input type="text" placeholder="Shampoo" name="name" id="name" minlength="3"
+      required /><label for="description">Product description:</label><textarea id="description" name="description"
+      minlength="10" required></textarea>
+  </section>
+  <section id="sec_Typ" hidden>
+    <main>
+      <div class="email">
+        <label for="email">Type your e-mail</label>
+        <input type="email" id="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" />
+      </div>
+      <div class="phonenumber">
+        <label for="phonenum">Introduce your phone number</label>
+        <input type="tel" id="tel" name="tel" placeholder="Phone number" />
+      </div>
+      <div class="URL">
+        <label for="Url">Enter a URL</label>
+        <input type="url" name="URL" placeholder="Url" />
+      </div>
+      <div class="numeric">
+        <label for="numeric">Enter a number</label>
+        <input type="number" name="number" placeholder="Number" />
+      </div>
+      <div class="slider_control">
+        <label for="price">Choose a number: </label>
+        <input type="range" name="price" id="price" min="50000" max="500000" step="1000" value="250000" />
+        <output class="price-output" for="price"></output>
+        <script>
+          const price = document.querySelector("#price");
+          const output = document.querySelector(".price-output");
+
+          output.textContent = price.value;
+
+          price.addEventListener("input", () => {
+            output.textContent = price.value;
+          });
+        </script>
+      </div>
+      <div class="datetime">
+        <label for="date">date</label>
+        <input type="date" name="date" id="date" />
+        <label for="datetime">datetime-local</label>
+        <input type="datetime-local" name="" id="" />
+        <label for="">Month</label>
+        <input type="month" name="" id="" />
+        <label for="">Time</label>
+        <input type="time" name="" id="" />
+        <label for="">Week</label>
+        <input type="week" name="" id="" />
+      </div>
+      <div class="color">
+        <label for="">Pick a color</label>
+        <input type="color" name="" id="" />
+      </div>
+      <div class="password">
+        <label for="">Password</label>
+        <input type="password" name="" id="" />
+      </div>
+      <div class="hidden">
+        <!--This is never shown to user but it also send information, it send the current time -->
+        <input type="hidden" id="timestamp" name="timestamp" value="1286705410" />
+      </div>
+      <div class="checkable_items">
+        <fieldset>
+          <legend>Checkable_items</legend>
+          <ul>
+            <li>
+              <label for="OPC1">OPC1</label>
+              <input type="checkbox" id="OPC1" name="vegetable" value="OPC1" checked />
+            </li>
+            <li>
+              <label for="OPC2">OPC2</label>
+              <input type="checkbox" id="OPC2" name="vegetable" value="OPC2" />
+            </li>
+            <li>
+              <label for="OPC3">OPC3</label>
+              <input type="checkbox" id="OPC3" name="vegetable" value="OPC3" />
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="radiobutton">
+        <fieldset>
+          <legend>What is your favorite OPC?</legend>
+          <ul>
+            <li>
+              <label for="OPC1">OPC1</label>
+              <input type="radio" id="OPC1" name="OPC" value="OPC1" checked />
+            </li>
+            <li>
+              <label for="OPC2">OPC2</label>
+              <input type="radio" id="OPC2" name="OPC" value="OPC2" />
+            </li>
+            <li>
+              <label for="OPC3">OPC3</label>
+              <input type="radio" id="OPC3" name="OPC" value="OPC3" />
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </main>
+  </section>
+  <section id="sec_REX" hidden>
+    <h2>Regular expressions</h2>
+    <form>
+      <label for="choose">This match exactly <mark>a</mark></label>
+      <input id="choose" name="pat_a" required pattern="a" />
+      <label for="choose">This match exactly <mark>abc</mark></label>
+      <input id="choose" name="pat_abc" required pattern="abc" />
+      <label for="choose">This match <mark>a</mark> or <mark>x</mark></label>
+      <input id="choose" name="pat_a|x" required pattern="a|x" />
+      <label for="choose">This match <mark>ab</mark> or <mark>xy</mark></label>
+      <input id="choose" name="pat_ab|xy" required pattern="ab|xy" />
+      <label for="choose">This match abc but with one or none <mark>b</mark></label>
+      <input id="choose" name="pat_ab?c" required pattern="ab?c" />
+      <label for="choose">This match abc but with none or multiple <mark>b</mark></label>
+      <input id="choose" name="pat_ab*c" required pattern="ab*c" />
+      <label for="choose">This match <mark>b</mark> but case sensitive</label>
+      <input id="choose" name="pat_[Bb]" required pattern="[Bb]" />
+      <button>Submit</button>
+    </form>
+  </section>
+  <section id="sec_Enl" hidden>
+    <p>Numerical incremet for step = 2 when max = 20</p>
+    <form>
+      <label for="number">this is a validation</label>
+      <input type="number" name="num_val" id="number" value="0" min="0" step="2" max="20" />
+    </form>
+  </section>
+
+  <section id="sec_Hom" hidden>
+    <p>Initial</p>
+  </section>
+  <main id="jscontent">
+    <section id="sec_Ho" >
+      <p>Initial</p>
+    </section>
+  </main>
 </body>
 </html>
