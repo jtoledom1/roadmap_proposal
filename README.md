@@ -1,5 +1,8 @@
 # roadmap_proposal
-Proposal alternatives for roadmap projects 
+Looking for learn fronted skills? 
+
+Here are some projects you'll find useful to practice your skills 
+
 <table>
     <tr>
         <th>Proposals</th>
@@ -10,7 +13,7 @@ Proposal alternatives for roadmap projects
         <th><a href="https://jtoledom1.github.io/roadmap_proposal/HTML/Forms_Validation/01">Click here!</a></th>
     </tr>
     <tr>
-        <th>Forms Validation JS</th>
+        <th>Forms Validation JS v1</th>
         <th><a href="https://jtoledom1.github.io/roadmap_proposal/HTML/Forms_Validation_JS">Click here!</a></th>
     </tr>
 
