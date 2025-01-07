@@ -6,11 +6,11 @@ Here are some projects you'll find useful to practice your skills
 <table>
     <tr>
         <th>Proposals</th>
-        <th><a href="https://jtoledom1.github.io/roadmap_proposal/HTML/Forms_Creation/">Click here!</a></th>
+        <th><a href="https://jtoledom1.github.io/roadmap_proposal/">Click here!</a></th>
     </tr>
     <tr>
         <th>Forms creation</th>
-        <th><a href="https://jtoledom1.github.io/roadmap_proposal/">Click here!</a></th>
+        <th><a href="https://jtoledom1.github.io/roadmap_proposal/HTML/Forms_Creation/">Click here!</a></th>
     </tr>
     <tr>
         <th>Forms Validation HTML & CSS</th>
