@@ -1,34 +1,21 @@
-function display(){
-    clear();
-    const elemshow = document.getElementById('li_req');
-    document.getElementById('frm_req').style.display='block';
-    elemshow.style.color='red';
-}
-
-function clear(){
-    const elementos = document.querySelectorAll('.nodisplay');
-    const ids = [];
-
-    elementos.forEach(elemento => {
-        ids.push(elemento.id);
-    });
-
-    elementos.forEach(elemento => {
-        elemento.style.display = 'none';
-        elemento.style.color = 'black';
-    });
+function show(targ){
+    hidehome();
+    let elem = document.getElementById(targ);
+    elem.style.display='block';
 
 }
-
-function email(){
-    display();
-    const email = document.getElementById("mail");
-
-    email.addEventListener("input", (event) => {
-    if (email.validity.typeMismatch) {
-        email.setCustomValidity("I am expecting an email address!");
-    } else {
-        email.setCustomValidity("");
+function hidehome(){
+    let hom = document.getElementById('sechome');
+    let form = document.getElementById('reqform');
+    hom.style.display='none';
+    form.style.display='none';
+}
+function validateForm() {
+    hidehome();
+    let x = document.forms["reqform"]["reqinput"].value;
+    if (x == "") {
+        lert("Name must be filled out");
+        return false;
     }
-    });
+
 }

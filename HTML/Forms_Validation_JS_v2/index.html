@@ -9,25 +9,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <p id="title">Form Validation JS V2</p>
-        <nav>
+    <Header>
+        <p id="title">Form validation</p>
+        <nav id="nav_opts">
             <ul>
-                <li onclick="email()" id="li_req">Required</li>
+                <li onclick="show('sechome')" id="home">Home</li>
+                <li onclick="show('reqform')">Required</li>
+                <li>Min Length</li>
+                <li>Max Lenght</li>
             </ul>
         </nav>
-    </header>
-    <main id="jscontent">
-        <section class="nodisplay" id="frm_req" style="display: none;">
-            <form>
-                <label for="mail">
-                I would like you to provide me with an email address:
-                </label>
-                <input type="email" id="mail" name="mail" />
-                <button>Submit</button>
-            </form>
-        </section>
-        <section></section>
+    </Header>
+    <main>
+        <div id="sechome">
+            <h1>Home</h1>
+        </div>
+        <form style="display: none;" onchange="validateForm()" name="reqform" id="reqform">
+            <label for="requ"></label>
+            <input type="text" name="reqinput" id="requ">
+        </form>
     </main>
+    <footer><p>© All rights reserved</p></footer>
 </body>
 </html>

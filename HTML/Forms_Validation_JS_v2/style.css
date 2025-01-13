@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 1vw;
+    text-align: center;
+}
+#title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+#nav_opts {
+    background-color: #333; /* Gris oscuro */
+    border-radius: 5px;
+}
+#nav_opts ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+#nav_opts li {
+    margin: 0 15px;
+    font-size: 1rem;
+    color: white
+}
+footer p{
+    position:absolute;
+    bottom: 0;
+}
