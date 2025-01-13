@@ -24,9 +24,10 @@
         <div id="sechome">
             <h1>Home</h1>
         </div>
-        <form style="display: none;" onchange="validateForm()" name="reqform" id="reqform">
-            <label for="requ"></label>
-            <input type="text" name="reqinput" id="requ">
+        <form style="display: none;" onsubmit="return validateForm()" name="reqform" id="reqform" method="post" action="/action_page.php">
+            <label for="requ">Here now you're gonna check a required input</label>
+            <input type="text" name="reqinput" id="reqinput">
+            <input type="submit" value="submit">
         </form>
     </main>
     <footer><p>© All rights reserved</p></footer>
