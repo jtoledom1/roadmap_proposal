@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     box-sizing: border-box;
 }
@@ -10,6 +10,11 @@ header {
     padding: 1vw;
     text-align: center;
 }
+main{
+    margin: 0 auto;
+    width: fit-content;
+}
+
 #title {
     font-size: 2.5rem;
     margin-bottom: 10px;
