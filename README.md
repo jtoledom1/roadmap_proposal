@@ -21,7 +21,7 @@ Here are some projects you'll find useful to practice your skills
         <th><a href="https://jtoledom1.github.io/roadmap_proposal/HTML/Forms_Validation_JS">Click here!</a></th>
     </tr>
     <tr>
-        <th>DOM Forms Validation HTML&CSS&JS v1</th>
+        <th>DOM Forms Validation HTML&CSS&JS v2</th>
         <th><a href="https://jtoledom1.github.io/roadmap_proposal/HTML/Forms_Validation_JS_v2/">Click here!</a></th>
     </tr>
 
