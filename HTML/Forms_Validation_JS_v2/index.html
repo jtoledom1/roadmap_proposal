@@ -15,8 +15,8 @@
             <ul>
                 <li onclick="show('sechome')" id="home">Home</li>
                 <li onclick="show('reqform')">Required</li>
-                <li>Min Length</li>
-                <li>Max Lenght</li>
+                <li onclick="show('forMil')">Min Length</li>
+                <li onclick="show('forMAl')">Max Length</li>
             </ul>
         </nav>
     </Header>
@@ -24,15 +24,27 @@
         <div id="sechome" >
             <h1>Home</h1>
         </div>
-        <form style="display: none;" onsubmit="return validateForm()" name="reqform" id="reqform" method="post" action="/action_page.php">
+        <form style="display: none;" onsubmit="return validateForm()" id="reqform" name="reqform" method="post" action="/action_page.php">
             <h1>Required</h1>
             <!-- <label for="requ">Here now you're gonna check a required input</label> -->
+            <p>Submit empty form to see the alert!</p>
             Here now you're gonna check a required input: <input type="text" name="reqinput" id="reqinput">
             <input type="submit" value="submit">
         </form>
-        <form style="display: none;" action="/action_page.php" method="post">
-            
+        <form style="display: none;" onsubmit="return validateFormMIL()" id="forMil" name="forMil" method="post" action="/action_page.php"   >
+            <h1>Min Length</h1>
+            <p>Sumbit with less of 3 characters</p>
+            Here now you're gonna check a min Length <input type="text" name="minLinput" id="minLinput">
+            <input type="submit" value="submit">
         </form>
+        <form style="display: none;" onsubmit="return validateFormMAL()" id="forMAl" name="forMAl" method="post" action="/action_page.php"   >
+            <h1>Max Length</h1>
+            <p>Sumbit with more of 3 characters</p>
+            Here now you're gonna check a max Length <input type="text" name="mAXLinput" id="mAXLinput">
+            <input type="submit" value="submit">
+        </form>
+        
+
     </main>
     <footer><p>© All rights reserved</p></footer>
 </body>
